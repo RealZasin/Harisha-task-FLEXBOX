@@ -1,0 +1,109 @@
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  /* width: 930px; */
+  display: flex;
+  font-size: 15px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 8px 8px 0px;
+}
+
+.sedans p {
+  padding-bottom: 100px;
+}
+
+.suvs p {
+  padding-bottom: 100px;
+}
+
+.luxury p {
+  padding-bottom: 100px;
+}
+
+.luxury,
+.suvs,
+.sedans {
+  width: 200px;
+  height: 400px;
+  padding: 40px 40px;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-size: 35px;
+  font-family: "Big Shoulders Display", cursive;
+  padding-bottom: 5px;
+}
+
+button {
+  -webkit-border-radius: 50;
+  -moz-border-radius: 50;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  mix-blend-mode: screen;
+  font-size: 20px;
+  background: hsl(0, 0%, 95%);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 3px solid white;
+  font-size: 15px;
+}
+
+button:active {
+  background-color: transparent;
+  text-decoration: none;
+  border: 3px solid white;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+
+
+}
+/* border-radius: 100px;
+  border: 0px solid white;
+  padding: 10px 20px */
+
+@media only screen and (max-width: 375px) {
+  .body {
+    margin: auto;   
+  }
+  .sedans {
+    border-radius: 8px 8px 0px 0px;
+  }
+  .luxury {
+    border-radius: 0px 0px 8px 8px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
